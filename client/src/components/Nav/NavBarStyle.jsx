@@ -5,7 +5,7 @@ export const NavArea = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 100px 10px 100px;
+  padding: 10px 50px 10px 50px;
 
   h1 {
     color: #fff;

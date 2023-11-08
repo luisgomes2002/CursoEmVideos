@@ -5,12 +5,12 @@ export const VideosArea = styled.section`
   color: #fff;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  width: 100%;
 `;
 
 export const Video = styled.div`
-  margin: 20px 10px;
+  margin: 30px 10px 0 10px;
   cursor: pointer;
+  height: 300px;
 
   img {
     background-color: #fff;
