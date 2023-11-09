@@ -5,29 +5,20 @@ const Home = () => {
   return (
     <HomeArea>
       <HomeInfo>
-        <h2>Sua conta</h2>
-        <h2>Sua conta</h2>
-        <h2>Sua conta</h2>
+        <button>Sua conta</button>
+        <button>Sua conta</button>
+        <button>Sua conta</button>
         <hr />
-        <h2>Sua conta</h2>
-        <h2>Sua conta</h2>
-        <h2>Sua conta</h2>
-        <h2>Sua conta</h2>
-        <h2>Sua conta</h2>
+        <button>Sua conta</button>
+        <button>Sua conta</button>
+        <button>Sua conta</button>
+        <button>Sua conta</button>
         <hr />
-        <h2>Sua conta</h2>
-        <h2>Sua conta</h2>
-        <h2>Sua conta</h2>
-        <h2>Sua conta</h2>
-        <h2>Sua conta</h2>
-        <h2>Sua conta</h2>
-        <h2>Sua conta</h2>
-        <h2>Sua conta</h2>
-        <h2>Sua conta</h2>
-        <h2>Sua conta</h2>
-        <h2>Sua conta</h2>
-        <h2>Sua conta</h2>
-        <h2>Sua conta</h2>
+        <button>Sua conta</button>
+        <button>Sua conta</button>
+        <button>Sua conta</button>
+        <button>Sua conta</button>
+        <button>Sua conta</button>
       </HomeInfo>
       <HomeVideos />
     </HomeArea>

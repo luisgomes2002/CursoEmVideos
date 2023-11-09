@@ -10,6 +10,10 @@ export const NavArea = styled.div`
   h1 {
     color: #fff;
   }
+
+  a {
+    text-decoration: none;
+  }
 `;
 
 export const InputArea = styled.div`

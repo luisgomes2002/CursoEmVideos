@@ -5,6 +5,14 @@ export const VideosArea = styled.section`
   color: #fff;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+  a {
+    text-decoration: none;
+  }
+
+  p {
+    color: #fff;
+  }
 `;
 
 export const Video = styled.div`
@@ -55,4 +63,20 @@ export const VideoInfo = styled.div`
 
 export const VideoText = styled.div`
   padding: 0 40px 0 0;
+`;
+
+export const VideoAndBanner = styled.div``;
+
+export const Banner = styled.div`
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+
+  img {
+    width: 1200px;
+    height: 400px;
+    background-color: #fff;
+  }
 `;

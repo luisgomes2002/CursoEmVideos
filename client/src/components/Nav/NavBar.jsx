@@ -1,10 +1,13 @@
+import { Link } from "react-router-dom";
 import { NavArea, InputArea, UserArea } from "./NavBarStyle";
 
 const NavBar = () => {
   return (
     <>
       <NavArea>
-        <h1>NomeSite</h1>
+        <Link to="/">
+          <h1>NomeSite</h1>
+        </Link>
         <InputArea>
           <input type="text" placeholder="Pesquise" />
           <button>

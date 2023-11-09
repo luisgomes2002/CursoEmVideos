@@ -10,13 +10,19 @@ export const HomeInfo = styled.div`
   padding: 20px 0;
   padding-right: 20px;
 
-  h2 {
-    padding: 5px;
+  button {
+    margin: 10px 20px;
+    width: 200px;
+    height: 40px;
     text-align: center;
+    background-color: #141414;
     color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
   }
 
-  hr {
-    border: 1px solid #505050;
+  button:hover {
+    background-color: #4d4a4a;
   }
 `;
