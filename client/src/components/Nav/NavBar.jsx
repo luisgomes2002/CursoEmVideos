@@ -16,10 +16,14 @@ const NavBar = () => {
         </InputArea>
         <UserArea>
           <h2>
-            <i className="fa-solid fa-user"></i>
+            <Link to="/login">
+              <i className="fa-solid fa-user"></i>
+            </Link>
           </h2>
           <h2>
-            <i className="fa-solid fa-cart-shopping"></i>
+            <Link>
+              <i className="fa-solid fa-cart-shopping"></i>
+            </Link>
           </h2>
         </UserArea>
       </NavArea>

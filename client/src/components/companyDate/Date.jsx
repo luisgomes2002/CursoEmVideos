@@ -21,7 +21,7 @@ const InfoContents = [
         img: img,
         name: "Algum tilulo aqui Pt.2",
         text: "Descricao do video",
-        url: "https://www.youtube.com/embed/4V-qXYhvT7E",
+        url: "https://youtu.be/LUUpAH5bYmg?t=306",
       },
     ],
   },

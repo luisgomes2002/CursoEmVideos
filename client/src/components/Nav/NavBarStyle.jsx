@@ -13,6 +13,7 @@ export const NavArea = styled.div`
 
   a {
     text-decoration: none;
+    color: #fff;
   }
 `;
 

@@ -8,6 +8,9 @@ import { RouterProvider, createBrowserRouter, Outlet } from "react-router-dom";
 import { GlobalStyled } from "./GlobalStyled.jsx";
 import VideosWatch from "./components/video/VideosWatch.jsx";
 import VideoPage from "./components/video/VideoPage.jsx";
+import Login from "./components/auth/Login.jsx";
+import Register from "./components/auth/Register.jsx";
+import Forgot from "./components/auth/ForgotPassword.jsx";
 
 const Layout = () => {
   return (
@@ -34,6 +37,18 @@ const router = createBrowserRouter([
       {
         path: "/:company/:id/:videoName/:videoId",
         element: <VideoPage />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/register",
+        element: <Register />,
+      },
+      {
+        path: "/forgot",
+        element: <Forgot />,
       },
     ],
   },

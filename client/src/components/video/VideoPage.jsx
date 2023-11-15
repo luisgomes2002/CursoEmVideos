@@ -9,6 +9,7 @@ const VideoPage = () => {
   const infoCompany = useParams();
   const [video, setVideo] = useState({});
   const [company, setCompany] = useState({});
+  const [currentVideo, setCurrentVideo] = useState(null);
 
   const [comments, setComments] = useState([]);
   const [newComment, setNewComment] = useState("");
@@ -31,7 +32,7 @@ const VideoPage = () => {
 
   useEffect(() => {
     findCompany();
-  }, [infoCompany.id]);
+  }, [infoCompany.id, infoCompany.videoId]);
 
   return (
     <VideoPageBack>
