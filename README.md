@@ -2,7 +2,7 @@
 
 ```
 - Digite no terminal
-/cd client
+ cd .\client\
 
 - Depois que entrar na pasta do client inicie o programa
 npm run dev 
