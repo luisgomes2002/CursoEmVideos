@@ -10,6 +10,10 @@ export const HomeInfo = styled.div`
   padding: 20px 0;
   padding-right: 20px;
 
+  a {
+    text-decoration: none;
+  }
+
   button {
     margin: 10px 20px;
     width: 200px;
@@ -20,6 +24,13 @@ export const HomeInfo = styled.div`
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+
+  i {
+    padding: 25px;
   }
 
   button:hover {

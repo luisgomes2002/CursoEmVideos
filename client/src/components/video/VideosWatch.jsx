@@ -51,9 +51,11 @@ const VideosWatch = () => {
                 key={itens.id}
               >
                 <EachVideo>
-                  <img src={itens.img} alt="" />
+                  <img src={itens.img} alt="videoBanner" />
                   <VideoInfo>
-                    <h1>{itens.name}</h1>
+                    <h1>
+                      {itens.id}. {itens.name}
+                    </h1>
                     <p>{itens.text}</p>
                   </VideoInfo>
                 </EachVideo>

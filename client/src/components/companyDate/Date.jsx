@@ -1,13 +1,20 @@
 import img from "../../assets/BackgroundImg.png";
+import userImg from "../../assets/matue.jpg";
 
 const InfoContents = [
   {
     id: 1,
     img: img,
-    name: "Nome do criador do curso",
+    name: "Nome da empresa do curso",
     text: "Falar um pouco sobre o curso",
     views: "100",
     postDate: "3 dias atrás",
+    user: {
+      name: "Matheus ",
+      idade: 30,
+      email: "Matheus@gmail.com",
+      img: userImg,
+    },
     videos: [
       {
         id: 1,

@@ -11,6 +11,7 @@ import VideoPage from "./components/video/VideoPage.jsx";
 import Login from "./components/auth/Login.jsx";
 import Register from "./components/auth/Register.jsx";
 import Forgot from "./components/auth/ForgotPassword.jsx";
+import Perfil from "./UserPage/Perfil.jsx";
 
 const Layout = () => {
   return (
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
       {
         path: "/forgot",
         element: <Forgot />,
+      },
+      {
+        path: "/perfil",
+        element: <Perfil />,
       },
     ],
   },

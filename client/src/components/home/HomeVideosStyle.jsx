@@ -68,6 +68,7 @@ export const VideoText = styled.div`
 export const VideoAndBanner = styled.div``;
 
 export const Banner = styled.div`
+  position: relative;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -76,7 +77,24 @@ export const Banner = styled.div`
 
   img {
     width: 1200px;
-    height: 400px;
+    height: 550px;
     background-color: #fff;
+  }
+
+  button {
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  button:first-child {
+    margin-right: 70%;
+  }
+
+  button:last-child {
+    margin-left: 70%;
   }
 `;

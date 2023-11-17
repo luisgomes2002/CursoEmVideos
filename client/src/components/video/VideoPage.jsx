@@ -9,7 +9,7 @@ const VideoPage = () => {
   const infoCompany = useParams();
   const [video, setVideo] = useState({});
   const [company, setCompany] = useState({});
-  const [currentVideo, setCurrentVideo] = useState(null);
+  console.log(company);
 
   const [comments, setComments] = useState([]);
   const [newComment, setNewComment] = useState("");
@@ -50,7 +50,7 @@ const VideoPage = () => {
           <h2>Comentários: {comments != 0 ? comments.length : "Nenhum"}</h2>
           {comments.map((comment, index) => (
             <p key={index}>
-              <h3>Usuário:</h3>
+              <h3>{company.user.name}:</h3>
               {comment}
             </p>
           ))}
@@ -75,7 +75,9 @@ const VideoPage = () => {
                 <EachVideo>
                   <img src={itens.img} alt="" />
                   <VideoInfo>
-                    <h1>{itens.name}</h1>
+                    <h1>
+                      {itens.id}. {itens.name}
+                    </h1>
                     <p>{itens.text}</p>
                   </VideoInfo>
                 </EachVideo>
