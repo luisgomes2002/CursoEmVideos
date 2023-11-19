@@ -12,6 +12,8 @@ import Login from "./components/auth/Login.jsx";
 import Register from "./components/auth/Register.jsx";
 import Forgot from "./components/auth/ForgotPassword.jsx";
 import Perfil from "./UserPage/Perfil.jsx";
+import Cursos from "./userPage/Cusos.jsx";
+import SeusCursos from "./userPage/SeusCursos.jsx";
 
 const Layout = () => {
   return (
@@ -54,6 +56,14 @@ const router = createBrowserRouter([
       {
         path: "/perfil",
         element: <Perfil />,
+      },
+      {
+        path: "/perfil/cursos",
+        element: <Cursos />,
+      },
+      {
+        path: "/perfil/seuscursos",
+        element: <SeusCursos />,
       },
     ],
   },

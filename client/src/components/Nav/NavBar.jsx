@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { NavArea, InputArea, UserArea, Logo, PaddinArea } from "./NavBarStyle";
 import { useState } from "react";
-import SideBar from "../home/Home";
+import SideBar from "../home/SideBar";
 
 const NavBar = () => {
   const [sideBarVisible, setSideBarVisible] = useState(false);
@@ -9,6 +9,7 @@ const NavBar = () => {
   const toggleSideBar = () => {
     setSideBarVisible(!sideBarVisible);
   };
+
   return (
     <>
       <NavArea>

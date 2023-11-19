@@ -31,6 +31,7 @@ const InfoContents = [
         url: "https://youtu.be/LUUpAH5bYmg?t=306",
       },
     ],
+    cursos: [],
   },
 ];
 

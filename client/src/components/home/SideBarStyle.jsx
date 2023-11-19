@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HomeArea = styled.div`
   position: fixed;
-  padding-top: 3%;
+  padding-top: 4%;
   top: 0;
   left: 0;
   height: 100vh;

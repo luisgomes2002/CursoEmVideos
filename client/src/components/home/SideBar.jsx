@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { HomeArea, HomeInfo } from "./HomeStyle";
+import { HomeArea, HomeInfo } from "./SideBarStyle";
 
 const Home = () => {
   return (
@@ -15,12 +15,12 @@ const Home = () => {
             <i className="fa-regular fa-user"></i> <p>Perfil</p>
           </button>
         </Link>
-        <Link to="">
+        <Link to="/perfil/seuscursos">
           <button>
             <i className="fa-solid fa-layer-group"></i> Seus Cursos
           </button>
         </Link>
-        <Link to="">
+        <Link to="/perfil/cursos">
           <button>
             <i className="fa-solid fa-book"></i> Biblioteca
           </button>
