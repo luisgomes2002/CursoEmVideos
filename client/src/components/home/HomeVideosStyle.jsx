@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const VideosArea = styled.section`
+  padding: 0 2%;
   background-color: #141414;
   color: #fff;
   display: grid;
@@ -73,12 +74,12 @@ export const Banner = styled.div`
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin: 30px 0;
+  padding: 30px 0;
+  background-color: #141414;
 
   img {
     width: 1200px;
     height: 550px;
-    background-color: #fff;
   }
 
   button {
@@ -91,10 +92,10 @@ export const Banner = styled.div`
   }
 
   button:first-child {
-    margin-right: 70%;
+    margin-right: 60%;
   }
 
   button:last-child {
-    margin-left: 70%;
+    margin-left: 60%;
   }
 `;

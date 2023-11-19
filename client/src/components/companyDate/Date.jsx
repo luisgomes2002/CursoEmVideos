@@ -10,7 +10,7 @@ const InfoContents = [
     views: "100",
     postDate: "3 dias atrás",
     user: {
-      name: "Matheus ",
+      name: "Matheus",
       idade: 30,
       email: "Matheus@gmail.com",
       img: userImg,

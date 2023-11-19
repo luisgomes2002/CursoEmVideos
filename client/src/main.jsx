@@ -1,7 +1,7 @@
 import React from "react";
 import "./GlobalStyled.jsx";
 import Footer from "./components/footer/Footer.jsx";
-import Home from "./components/home/Home";
+import Home from "./components/home/HomeVideos.jsx";
 import NavBar from "./components/nav/NavBar.jsx";
 import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter, Outlet } from "react-router-dom";

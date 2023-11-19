@@ -9,7 +9,6 @@ const VideoPage = () => {
   const infoCompany = useParams();
   const [video, setVideo] = useState({});
   const [company, setCompany] = useState({});
-  console.log(company);
 
   const [comments, setComments] = useState([]);
   const [newComment, setNewComment] = useState("");

@@ -1,9 +1,16 @@
 import styled from "styled-components";
 
 export const HomeArea = styled.div`
+  position: fixed;
+  padding-top: 3%;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 13%;
+  z-index: 999;
   display: grid;
   grid-template-columns: 13% 1fr;
-  background-color: #141414;
+  background-color: #141414cc;
 `;
 
 export const HomeInfo = styled.div`

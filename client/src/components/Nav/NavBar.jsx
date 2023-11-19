@@ -1,13 +1,25 @@
 import { Link } from "react-router-dom";
-import { NavArea, InputArea, UserArea } from "./NavBarStyle";
+import { NavArea, InputArea, UserArea, Logo, PaddinArea } from "./NavBarStyle";
+import { useState } from "react";
+import SideBar from "../home/Home";
 
 const NavBar = () => {
+  const [sideBarVisible, setSideBarVisible] = useState(false);
+
+  const toggleSideBar = () => {
+    setSideBarVisible(!sideBarVisible);
+  };
   return (
     <>
       <NavArea>
-        <Link to="/">
-          <h1>NomeSite</h1>
-        </Link>
+        <Logo>
+          <button onClick={toggleSideBar}>
+            <i className="fa-solid fa-bars"></i>
+          </button>
+          <Link to="/">
+            <h1>NomeSite</h1>
+          </Link>
+        </Logo>
         <InputArea>
           <input type="text" placeholder="Pesquise" />
           <button>
@@ -27,6 +39,8 @@ const NavBar = () => {
           </h2>
         </UserArea>
       </NavArea>
+      {sideBarVisible && <SideBar />}
+      <PaddinArea />
     </>
   );
 };
