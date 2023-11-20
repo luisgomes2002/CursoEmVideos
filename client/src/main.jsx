@@ -14,6 +14,7 @@ import Forgot from "./components/auth/ForgotPassword.jsx";
 import Perfil from "./UserPage/Perfil.jsx";
 import Cursos from "./userPage/Cusos.jsx";
 import SeusCursos from "./userPage/SeusCursos.jsx";
+import Carrinho from "./components/buy/Carrinho.jsx";
 
 const Layout = () => {
   return (
@@ -64,6 +65,10 @@ const router = createBrowserRouter([
       {
         path: "/perfil/seuscursos",
         element: <SeusCursos />,
+      },
+      {
+        path: "/buy",
+        element: <Carrinho />,
       },
     ],
   },

@@ -11,7 +11,8 @@ import { TextLimit } from "../textLimit/TextLimit";
 const SeusCursos = () => {
   return (
     <AreaVideos>
-      <h1>Seus Cursos Comprados, Total: {InfoContents.length}</h1>
+      <h1>Seus Cursos</h1>
+      <h1>Total: {InfoContents.length}</h1>
       <CadaVideo>
         {InfoContents.length > 0 ? (
           InfoContents.map((itens) => {

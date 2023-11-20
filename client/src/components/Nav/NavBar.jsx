@@ -1,13 +1,17 @@
 import { Link } from "react-router-dom";
 import { NavArea, InputArea, UserArea, Logo, PaddinArea } from "./NavBarStyle";
 import { useState } from "react";
-import SideBar from "../home/SideBar";
+import { HomeArea, HomeInfo } from "./SideBarStyle";
 
 const NavBar = () => {
   const [sideBarVisible, setSideBarVisible] = useState(false);
 
   const toggleSideBar = () => {
     setSideBarVisible(!sideBarVisible);
+  };
+
+  const closeSideBar = () => {
+    setSideBarVisible(false);
   };
 
   return (
@@ -34,13 +38,38 @@ const NavBar = () => {
             </Link>
           </h2>
           <h2>
-            <Link>
+            <Link to="/buy">
               <i className="fa-solid fa-cart-shopping"></i>
             </Link>
           </h2>
         </UserArea>
       </NavArea>
-      {sideBarVisible && <SideBar />}
+      {sideBarVisible && (
+        <HomeArea>
+          <HomeInfo>
+            <Link to="/" onClick={closeSideBar}>
+              <button>
+                <i className="fa-solid fa-house"></i> Início
+              </button>
+            </Link>
+            <Link to="/perfil" onClick={closeSideBar}>
+              <button>
+                <i className="fa-regular fa-user"></i> <p>Perfil</p>
+              </button>
+            </Link>
+            <Link to="/perfil/seuscursos" onClick={closeSideBar}>
+              <button>
+                <i className="fa-solid fa-layer-group"></i> Seus Cursos
+              </button>
+            </Link>
+            <Link to="/perfil/cursos" onClick={closeSideBar}>
+              <button>
+                <i className="fa-solid fa-book"></i> Biblioteca
+              </button>
+            </Link>
+          </HomeInfo>
+        </HomeArea>
+      )}
       <PaddinArea />
     </>
   );
